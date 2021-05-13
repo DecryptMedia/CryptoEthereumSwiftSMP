@@ -19,6 +19,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
+        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", .upToNextMinor(from: "1.1.1100")),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .upToNextMinor(from: "1.4.0")),
         .package(url: "https://github.com/vapor-community/copenssl.git", .exact("1.0.0-rc.1")),
         .package(url: "https://github.com/Boilertalk/secp256k1.swift", .upToNextMinor(from: "0.1.0"))
@@ -28,7 +29,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "CryptoEthereumSwiftPrivate",
-            dependencies: ["COpenSSL"],
+            dependencies: ["OpenSSL", "COpenSSL"],
             path: "Sources",
             exclude: [],
             sources: ["include", "CryptoEthereumSwiftPrivate/Internal.m"],

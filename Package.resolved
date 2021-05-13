@@ -2,15 +2,6 @@
   "object": {
     "pins": [
       {
-        "package": "COpenSSL",
-        "repositoryURL": "https://github.com/vapor-community/copenssl.git",
-        "state": {
-          "branch": null,
-          "revision": "a347e9ec038b134aecf42e0c21f2deb9035adf3f",
-          "version": "1.0.0-rc.1"
-        }
-      },
-      {
         "package": "CryptoSwift",
         "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift.git",
         "state": {

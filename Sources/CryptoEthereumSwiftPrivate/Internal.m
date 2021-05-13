@@ -1,5 +1,5 @@
 #import "include/Internal.h"
-@import COpenSSL;
+@import OpenSSL;
 
 @implementation CryptoHash
 
